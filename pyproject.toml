@@ -5,14 +5,25 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "deepagents>=0.5.9",
+    "deepagents>=0.5.6",
     "langchain==1.2.17",
     "langchain-google-genai>=4.2.2",
     "langchain-google-vertexai>=3.2.3",
     "langchain-ollama==1.0.1",
     "marimo>=0.23.5",
-    "pydantic-ai>=1.95.0",
+    "pydantic-ai>=1.92.0",
+    "pyrefly>=0.64.1",
 ]
 
 [tool.uv]
 exclude-newer = "7 days"
+
+[dependency-groups]
+dev = [
+    "altair>=6.1.0",
+    "nbformat>=5.10.4",
+    "python-lsp-ruff>=2.3.1",
+    "python-lsp-server>=1.14.0",
+    "ruff>=0.15.12",
+    "websockets>=16.0",
+]
